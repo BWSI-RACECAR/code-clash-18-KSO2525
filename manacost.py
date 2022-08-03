@@ -59,7 +59,7 @@ class Solution:
             if i in pool:
                 pool = pool.replace(i, '', 1)
                 cost = cost.replace(i, '', 1)
-        if len(cost == 0):
+        if len(cost) == 0:
             return True
         if cost.isdigit():
             return int(cost) <= len(pool)
