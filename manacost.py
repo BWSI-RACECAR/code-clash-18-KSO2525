@@ -42,7 +42,7 @@ class Solution:
         # return: bool
     
         # TODO: Write code below to return a bool with the solution to the prompt
-        for i in range(len(cost)):
+        '''for i in range(len(cost)):
             if cost[i].isnumeric() == False:
                 if cost[i] in pool:
                     pool = pool[:i] + pool[i+1:]
@@ -52,9 +52,9 @@ class Solution:
             if len(pool) >= cost[0]:
                 return True
         else:
-            return True
+            return True'''
 
-        '''x = len(pool)
+        x = len(pool)
         for i in cost:
             if i in pool:
                 pool = pool.replace(i, '', 1)
@@ -63,7 +63,7 @@ class Solution:
             return True
         if cost.isdigit():
             return int(cost) <= x
-        return False'''
+        return False
         
 
 
