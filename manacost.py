@@ -62,7 +62,7 @@ class Solution:
         if len(cost == 0):
             return True
         if cost.isdigit():
-            return int(cost) <= x
+            return int(cost) <= len(pool)
         return False
         
 
